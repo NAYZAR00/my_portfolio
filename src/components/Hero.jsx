@@ -1,4 +1,4 @@
-import { Github, Linkedin, ArrowDown, Download, Code2 } from "lucide-react";
+import { Github, Linkedin, ArrowDown, Download, Code2, Briefcase } from "lucide-react";
 import portfolioData from "../data/portfolioData";
 
 function Hero() {
@@ -18,16 +18,27 @@ function Hero() {
           <span className="gradient-text">.</span>
         </h1>
 
+        <div className="hero-role-badge">
+          <Briefcase size={15} />
+          <span>{developer.title}</span>
+        </div>
+
         <p className="hero-description">
-          Full-Stack MERN Developer building modern, responsive web applications
-          with React, Node.js, Express, and MongoDB.
+          Information Technology student at Rangsit University with hands-on practice building
+          web development projects using the MERN stack (MongoDB, Express, React, Node.js).
+          Seeking a four-month remote developer internship.
         </p>
 
         <div className="hero-buttons">
           <a href="#projects" className="primary-button">
             View Featured Projects <ArrowDown size={18} />
           </a>
-          <a href={developer.cvUrl} className="secondary-button" download>
+          <a
+            href={developer.cvUrl}
+            className="secondary-button"
+            download="Nay_Zar_Aung_CV.pdf"
+            aria-label="Download Nay Zar Aung's CV"
+          >
             Download CV <Download size={18} />
           </a>
         </div>
@@ -55,25 +66,30 @@ function Hero() {
       </div>
 
       <div className="hero-visual" aria-label="Developer code illustration">
-        <div className="floating-tag tag-top"><Code2 size={15} /> MERN STACK</div>
+        <div className="floating-tag tag-top">
+          <Code2 size={15} /> MERN STACK DEVELOPER
+        </div>
         <div className="code-card">
           <div className="code-header">
-            <span /><span /><span />
+            <span />
+            <span />
+            <span />
             <p>developer.js</p>
           </div>
           <div className="code-content">
-            <p><span className="code-purple">const</span> developer = {"{"}</p>
+            <p><span className="code-purple">const</span> candidate = {"{"}</p>
             <p>  name: <span className="code-green">"{developer.name}"</span>,</p>
-            <p>  github: <span className="code-green">"{developer.githubHandle}"</span>,</p>
-            <p>  role: <span className="code-green">"Full-Stack MERN"</span>,</p>
-            <p>  featuredProject: <span className="code-green">"Media World"</span>,</p>
-            <p>  stack: [</p>
+            <p>  university: <span className="code-green">"Rangsit University (RSU)"</span>,</p>
+            <p>  degree: <span className="code-green">"Information Technology"</span>,</p>
+            <p>  targetRole: <span className="code-green">"{developer.targetRole}"</span>,</p>
+            <p>  availability: <span className="code-green">"4 Months (Fully Remote)"</span>,</p>
+            <p>  coreStack: [</p>
             <p>    <span className="code-orange">"MongoDB"</span>,</p>
             <p>    <span className="code-orange">"Express.js"</span>,</p>
             <p>    <span className="code-orange">"React.js"</span>,</p>
             <p>    <span className="code-orange">"Node.js"</span></p>
             <p>  ],</p>
-            <p>  status: <span className="code-green">"Open to opportunities"</span></p>
+            <p>  seekingInternship: <span className="code-purple">true</span></p>
             <p>{"}"};</p>
           </div>
           <div className="code-footer">
@@ -81,7 +97,9 @@ function Hero() {
             Live production apps & GitHub repositories
           </div>
         </div>
-        <div className="floating-tag tag-bottom">{"{ }"} Clean code, real solutions</div>
+        <div className="floating-tag tag-bottom">
+          {"{ }"} CRUD & MVC Architecture
+        </div>
       </div>
     </section>
   );

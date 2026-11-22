@@ -1,31 +1,72 @@
 export const portfolioData = {
   developer: {
     name: "Nay Zar Aung",
-    title: "Full-Stack Developer",
+    title: "MERN STACK DEVELOPER | FULL-STACK DEVELOPER INTERN",
+    role: "MERN Stack Developer",
+    targetRole: "MERN Stack Developer Intern",
     greeting: "Hello, I'm",
-    tagline: "Full-Stack MERN Developer specializing in high-performance web applications.",
-    bio: "I build responsive, full-stack web applications with modern architectures. Experienced in building end-to-end MERN (MongoDB, Express, React, Node.js) products with secure authentication, RESTful APIs, and scalable cloud deployments on Vercel and Render.",
-    availability: "Available for Full-time & Internship Opportunities",
-    location: "Global / Remote",
+    tagline: "Information Technology student at Rangsit University seeking a four-month remote MERN Stack Developer Internship.",
+    bio: "Information Technology university student at Rangsit University with hands-on practice building web development projects and working with the MERN stack. Familiar with creating React interfaces, developing Node.js and Express.js backend functionality, connecting MongoDB databases, and organizing application code. Seeking a four-month remote MERN Stack Developer Internship to strengthen practical skills, contribute to a development team, and gain experience building real-world web applications.",
+    availability: "Seeking 4-Month Remote Internship",
+    availabilityDuration: "Four months",
+    preferredArrangement: "Fully remote",
+    nationality: "Myanmar",
+    location: "Thailand & Myanmar (Fully Remote)",
+    university: "Rangsit University (RSU), Thailand",
+    degree: "Bachelor's degree studies in Information Technology",
+    expectedGraduation: "December 2027",
     email: "nayzaraung103@gmail.com",
     github: "https://github.com/NAYZAR00",
     githubHandle: "@NAYZAR00",
     linkedin: "https://www.linkedin.com/in/nay-zar-aung-7973a1409",
     linkedinHandle: "in/nay-zar-aung-7973a1409",
-    cvUrl: "/cv.pdf",
+    portfolioUrl: "https://nayzar00.github.io/my_portfolio",
+    cvUrl: `${import.meta.env.BASE_URL}cv.pdf`,
+  },
+  education: {
+    institution: "Rangsit University (RSU)",
+    country: "Thailand",
+    degree: "Bachelor's degree studies in Information Technology",
+    graduation: "December 2027",
+    status: "Expected graduation: December 2027",
+    description: "Core coursework focused on software engineering, web application development, database management systems, and computer networks."
+  },
+  additionalInfo: {
+    internshipTarget: "MERN Stack Developer Intern",
+    availability: "Four months",
+    preferredArrangement: "Fully remote",
+    nationality: "Myanmar",
+    languages: [
+      { name: "English", level: "Intermediate (B1)" },
+      { name: "Myanmar", level: "Native" }
+    ]
   },
   skills: [
     {
       category: "Frontend",
-      items: ["React.js", "JavaScript (ES6+)", "HTML5 & CSS3", "Tailwind CSS", "Vite", "Responsive Design"]
+      items: ["HTML5", "CSS3", "JavaScript", "React.js", "Bootstrap", "Responsive UI"]
     },
     {
       category: "Backend",
-      items: ["Node.js", "Express.js", "RESTful APIs", "JWT Authentication", "Middleware", "CORS & Security"]
+      items: ["Node.js", "Express.js", "REST APIs", "CRUD Operations", "MVC Architecture", "Authentication"]
     },
     {
-      category: "Database & Cloud",
-      items: ["MongoDB", "Mongoose", "Vercel", "Render", "Git & GitHub", "Postman"]
+      category: "Database",
+      items: ["MongoDB", "Mongoose", "MySQL"]
+    },
+    {
+      category: "Tools",
+      items: ["Git", "GitHub", "Visual Studio Code", "Postman", "Vite", "GitHub Pages"]
+    },
+    {
+      category: "Concepts",
+      items: [
+        "CRUD Operations",
+        "MVC Architecture",
+        "Authentication",
+        "Frontend/Backend Integration",
+        "RESTful API Design"
+      ]
     }
   ],
   projects: [
@@ -35,7 +76,7 @@ export const portfolioData = {
       tagline: "Full-Stack MERN News & Media Platform",
       description:
         "A full-stack media and news publishing web application featuring user authentication, protected story creation, paginated article reading, and dynamic category filtering across Culture, Community, and Current Affairs.",
-      image: "/projects/newmedia-world.png",
+      image: `${import.meta.env.BASE_URL}projects/newmedia-world.png`,
       liveUrl: "https://newmedia-world.vercel.app/",
       githubUrl: "https://github.com/NAYZAR00/NewmediaWorld",
       backendUrl: "https://newmediaworld.onrender.com",
@@ -47,7 +88,25 @@ export const portfolioData = {
         "Responsive, modern layout with category exploration (Culture, Community, Current Affairs)",
         "Decoupled cloud architecture: Frontend deployed on Vercel with REST API backend on Render"
       ],
-      featured: true
+      featured: true,
+      cvProject: false
+    },
+    {
+      id: "student-management-system",
+      title: "Student Management System",
+      tagline: "Full-Stack MERN Academic Management Application",
+      description:
+        "Full-stack web application project focused on managing student information. Practised building application features, handling CRUD operations, connecting a database, and organizing backend code using the MVC pattern.",
+      githubUrl: "https://github.com/NAYZAR00",
+      tags: ["React.js", "Node.js", "Express.js", "MongoDB", "MVC Architecture", "CRUD", "REST APIs"],
+      highlights: [
+        "Practised building core application features for managing student academic records",
+        "Engineered full CRUD operations (Create, Read, Update, Delete) with MongoDB database connectivity",
+        "Structured modular backend code following the industry-standard MVC pattern",
+        "Implemented clean frontend/backend integration through RESTful API endpoints"
+      ],
+      featured: false,
+      cvProject: true
     },
     {
       id: "weathy",
@@ -57,8 +116,9 @@ export const portfolioData = {
         "A responsive real-time weather dashboard featuring glassmorphism design, city search with dynamic suggestions, real-time temperature, condition summaries, and atmospheric metrics.",
       liveUrl: "https://nayzar00.github.io/weathy/",
       githubUrl: "https://github.com/NAYZAR00/weathy",
-      tags: ["JavaScript", "Weather API", "Glassmorphism CSS", "Async/Await", "GitHub Pages"],
-      featured: false
+      tags: ["JavaScript", "Weather API", "CSS3", "Async/Await", "GitHub Pages"],
+      featured: false,
+      cvProject: false
     },
     {
       id: "todo-list",
@@ -68,7 +128,8 @@ export const portfolioData = {
         "A clean and intuitive task management tool designed for day-to-day productivity with interactive state handling and local persistence.",
       githubUrl: "https://github.com/NAYZAR00/To-do-list",
       tags: ["JavaScript", "DOM Manipulation", "CSS3", "Local Storage"],
-      featured: false
+      featured: false,
+      cvProject: false
     }
   ]
 };

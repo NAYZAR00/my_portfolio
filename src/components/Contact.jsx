@@ -1,8 +1,8 @@
-import { Mail, Send, Github, Linkedin, MessageSquare, ArrowUpRight } from "lucide-react";
+import { Mail, Send, Github, Linkedin, MessageSquare, ArrowUpRight, Download } from "lucide-react";
 import portfolioData from "../data/portfolioData";
 
 function Contact() {
-  const { developer } = portfolioData;
+  const { developer, additionalInfo } = portfolioData;
 
   return (
     <section id="contact" className="section contact-section">
@@ -14,7 +14,7 @@ function Contact() {
           Let's Build Something <span className="gradient-text">Great</span>
         </h2>
         <p className="section-subtitle">
-          Interested in collaborating or discussing opportunities? Feel free to reach out.
+          Seeking a four-month remote MERN Stack Developer Internship. Let's connect!
         </p>
       </div>
 
@@ -22,15 +22,33 @@ function Contact() {
         <div className="contact-card">
           <div className="contact-status">
             <span className="status-dot" />
-            <span>{developer.availability}</span>
+            <span>
+              {developer.availability} • {additionalInfo.preferredArrangement}
+            </span>
           </div>
 
           <h3>Start a Conversation</h3>
           <p>
-            I am currently open to full-time roles, internships, and freelance projects. Whether you have a project in mind or want to talk tech, my inbox is open!
+            I am actively seeking a four-month remote MERN Stack Developer Internship to contribute to
+            development teams and build real-world web applications. Feel free to reach out directly via
+            email or view my code on GitHub!
           </p>
 
           <div className="contact-links">
+            <a
+              href={`mailto:${developer.email}`}
+              className="contact-link-item"
+            >
+              <div className="contact-link-icon">
+                <Mail size={20} />
+              </div>
+              <div className="contact-link-info">
+                <span className="link-label">Email</span>
+                <span className="link-value">{developer.email}</span>
+              </div>
+              <ArrowUpRight size={18} className="link-arrow" />
+            </a>
+
             <a
               href={developer.github}
               target="_blank"
@@ -58,32 +76,23 @@ function Contact() {
               </div>
               <div className="contact-link-info">
                 <span className="link-label">LinkedIn</span>
-                <span className="link-value">{developer.linkedinHandle || "Nay Zar Aung"}</span>
+                <span className="link-value">{developer.linkedinHandle}</span>
               </div>
               <ArrowUpRight size={18} className="link-arrow" />
             </a>
 
-            <a
-              href={`mailto:${developer.email}`}
-              className="contact-link-item"
-            >
-              <div className="contact-link-icon">
-                <Mail size={20} />
-              </div>
-              <div className="contact-link-info">
-                <span className="link-label">Email</span>
-                <span className="link-value">{developer.email}</span>
-              </div>
-              <ArrowUpRight size={18} className="link-arrow" />
-            </a>
           </div>
 
           <div className="contact-action-bar">
             <a href={`mailto:${developer.email}`} className="primary-button">
               <Send size={16} /> Send Email
             </a>
-            <a href={developer.cvUrl} className="secondary-button" download>
-              Download CV
+            <a
+              href={developer.cvUrl}
+              className="secondary-button"
+              download="Nay_Zar_Aung_CV.pdf"
+            >
+              <Download size={16} /> Download CV
             </a>
           </div>
         </div>

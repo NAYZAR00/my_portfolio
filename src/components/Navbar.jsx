@@ -1,4 +1,4 @@
-import { Sun, Moon, Github, Linkedin } from "lucide-react";
+import { Sun, Moon, Github, Linkedin, Download } from "lucide-react";
 import portfolioData from "../data/portfolioData";
 
 function Navbar({ theme, toggleTheme }) {
@@ -8,7 +8,7 @@ function Navbar({ theme, toggleTheme }) {
     <nav className="navbar" aria-label="Main navigation">
       <a href="#home" className="logo">
         <span className="logo-symbol">&lt;/&gt;</span>
-        {developer.name || "DevPortfolio"}
+        {developer.name || "Nay Zar Aung"}
       </a>
 
       <div className="nav-links">
@@ -20,6 +20,15 @@ function Navbar({ theme, toggleTheme }) {
       </div>
 
       <div className="nav-actions">
+        <a
+          href={developer.cvUrl}
+          className="nav-cv-btn"
+          download="Nay_Zar_Aung_CV.pdf"
+          title="Download CV"
+        >
+          <Download size={15} />
+          <span>CV</span>
+        </a>
         <a
           href={developer.github}
           target="_blank"

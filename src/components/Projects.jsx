@@ -1,4 +1,4 @@
-import { ExternalLink, Globe, Server, CheckCircle2, Sparkles, Github, FolderGit2 } from "lucide-react";
+import { ExternalLink, Globe, Server, CheckCircle2, Sparkles, Github, FolderGit2, BookOpen } from "lucide-react";
 import portfolioData from "../data/portfolioData";
 
 function Projects() {
@@ -16,7 +16,7 @@ function Projects() {
           Curated <span className="gradient-text">Projects</span>
         </h2>
         <p className="section-subtitle">
-          Real-world full-stack web applications and open-source repositories.
+          Full-stack web applications, academic management systems, and open-source repositories.
         </p>
       </div>
 
@@ -84,14 +84,16 @@ function Projects() {
               </div>
 
               <div className="project-actions">
-                <a
-                  href={featuredProject.liveUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="primary-button project-btn"
-                >
-                  <Globe size={16} /> Live Demo <ExternalLink size={15} />
-                </a>
+                {featuredProject.liveUrl && (
+                  <a
+                    href={featuredProject.liveUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="primary-button project-btn"
+                  >
+                    <Globe size={16} /> Live Demo <ExternalLink size={15} />
+                  </a>
+                )}
                 {featuredProject.githubUrl && (
                   <a
                     href={featuredProject.githubUrl}
@@ -120,13 +122,23 @@ function Projects() {
         {otherProjects.length > 0 && (
           <div className="other-projects-section">
             <h3 className="other-projects-heading">
-              <FolderGit2 size={20} /> Other Noteworthy Projects & Repositories
+              <FolderGit2 size={20} /> Academic & Portfolio Projects
             </h3>
             <div className="secondary-projects-grid">
               {otherProjects.map((project) => (
-                <div key={project.id} className="secondary-project-card">
+                <div
+                  key={project.id}
+                  className={`secondary-project-card ${project.cvProject ? "highlighted-card" : ""}`}
+                >
                   <div className="secondary-project-header">
-                    <span className="project-tagline">{project.tagline}</span>
+                    <div className="header-meta-group">
+                      {project.cvProject && (
+                        <span className="cv-project-pill">
+                          <BookOpen size={12} /> CV Project
+                        </span>
+                      )}
+                      <span className="project-tagline">{project.tagline}</span>
+                    </div>
                     <div className="secondary-header-links">
                       {project.liveUrl && (
                         <a
@@ -164,6 +176,18 @@ function Projects() {
                     </a>
                   </h4>
                   <p className="project-desc">{project.description}</p>
+
+                  {project.highlights && project.highlights.length > 0 && (
+                    <ul className="secondary-project-highlights">
+                      {project.highlights.map((item, index) => (
+                        <li key={index}>
+                          <CheckCircle2 size={13} className="highlight-icon" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+
                   <div className="project-tech-tags">
                     {project.tags.map((tag) => (
                       <span key={tag} className="tech-tag">
@@ -171,6 +195,7 @@ function Projects() {
                       </span>
                     ))}
                   </div>
+
                   <div className="project-actions">
                     {project.liveUrl && (
                       <a

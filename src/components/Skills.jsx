@@ -1,4 +1,4 @@
-import { Code2, Server, Database, Layers, CheckCircle } from "lucide-react";
+import { Code2, Server, Database, Layers, Wrench, CheckCircle } from "lucide-react";
 import portfolioData from "../data/portfolioData";
 
 function Skills() {
@@ -10,8 +10,12 @@ function Skills() {
         return <Code2 size={20} />;
       case "Backend":
         return <Server size={20} />;
-      case "Database & Cloud":
+      case "Database":
         return <Database size={20} />;
+      case "Tools":
+        return <Wrench size={20} />;
+      case "Concepts":
+        return <Layers size={20} />;
       default:
         return <Layers size={20} />;
     }
@@ -27,7 +31,7 @@ function Skills() {
           Skills & <span className="gradient-text">Technologies</span>
         </h2>
         <p className="section-subtitle">
-          Core technologies I use to build scalable and responsive web applications.
+          Core technical skills, databases, developer tools, and architecture concepts.
         </p>
       </div>
 
