@@ -395,6 +395,12 @@
   align-items: stretch;
 }
 
+.about-grid-single {
+  grid-template-columns: 1fr;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
 .about-card {
   background: var(--surface);
   border: 1px solid var(--border);

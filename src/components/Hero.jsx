@@ -7,11 +7,6 @@ function Hero() {
   return (
     <section id="home" className="hero">
       <div className="hero-content">
-        <div className="availability">
-          <span className="status-dot" />
-          {developer.availability}
-        </div>
-
         <p className="hero-greeting">{developer.greeting}</p>
         <h1>
           {developer.name}
@@ -24,9 +19,7 @@ function Hero() {
         </div>
 
         <p className="hero-description">
-          Information Technology student at Rangsit University with hands-on practice building
-          web development projects using the MERN stack (MongoDB, Express, React, Node.js).
-          Seeking a four-month remote developer internship.
+          Information Technology student at Rangsit University with hands-on experience building full-stack web applications using the MERN stack (MongoDB, Express.js, React.js, and Node.js). Experienced in developing responsive user interfaces, building RESTful APIs, and integrating databases. Eager to apply technical skills, contribute to real-world software development projects, and grow as a Junior Full-Stack Developer. Seeking an opportunity to start a professional career in full-stack development.
         </p>
 
         <div className="hero-buttons">
@@ -67,7 +60,7 @@ function Hero() {
 
       <div className="hero-visual" aria-label="Developer code illustration">
         <div className="floating-tag tag-top">
-          <Code2 size={15} /> MERN STACK DEVELOPER
+          <Code2 size={15} /> FULL-STACK DEVELOPER
         </div>
         <div className="code-card">
           <div className="code-header">
@@ -79,18 +72,17 @@ function Hero() {
           <div className="code-content">
             <p><span className="code-purple">const</span> candidate = {"{"}</p>
             <p>  name: <span className="code-green">"{developer.name}"</span>,</p>
-            <p>  university: <span className="code-green">"Rangsit University (RSU)"</span>,</p>
+
             <p>  degree: <span className="code-green">"Information Technology"</span>,</p>
             <p>  targetRole: <span className="code-green">"{developer.targetRole}"</span>,</p>
-            <p>  availability: <span className="code-green">"4 Months (Fully Remote)"</span>,</p>
+
             <p>  coreStack: [</p>
             <p>    <span className="code-orange">"MongoDB"</span>,</p>
             <p>    <span className="code-orange">"Express.js"</span>,</p>
             <p>    <span className="code-orange">"React.js"</span>,</p>
             <p>    <span className="code-orange">"Node.js"</span></p>
             <p>  ],</p>
-            <p>  seekingInternship: <span className="code-purple">true</span></p>
-            <p>{"}"};</p>
+
           </div>
           <div className="code-footer">
             <span className="status-dot" />

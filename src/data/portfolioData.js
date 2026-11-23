@@ -1,12 +1,12 @@
 export const portfolioData = {
   developer: {
     name: "Nay Zar Aung",
-    title: "MERN STACK DEVELOPER | FULL-STACK DEVELOPER INTERN",
-    role: "MERN Stack Developer",
-    targetRole: "MERN Stack Developer Intern",
+    title: "FULL-STACK DEVELOPER INTERN",
+    role: "Full-Stack Developer",
+    targetRole: "Full-Stack Developer Intern",
     greeting: "Hello, I'm",
-    tagline: "Information Technology student at Rangsit University seeking a four-month remote MERN Stack Developer Internship.",
-    bio: "Information Technology university student at Rangsit University with hands-on practice building web development projects and working with the MERN stack. Familiar with creating React interfaces, developing Node.js and Express.js backend functionality, connecting MongoDB databases, and organizing application code. Seeking a four-month remote MERN Stack Developer Internship to strengthen practical skills, contribute to a development team, and gain experience building real-world web applications.",
+    tagline: "Information Technology student at Rangsit University seeking a four-month remote Full-Stack Developer Internship.",
+    bio: "Information Technology university student at Rangsit University with hands-on practice building web development projects and working with the full stack (MongoDB, Express, React, Node.js). Familiar with creating React interfaces, developing Node.js and Express.js backend functionality, connecting MongoDB databases, and organizing application code. Seeking a four-month remote Full-Stack Developer Internship to strengthen practical skills, contribute to a development team, and gain experience building real-world web applications.",
     availability: "Seeking 4-Month Remote Internship",
     availabilityDuration: "Four months",
     preferredArrangement: "Fully remote",
@@ -32,7 +32,7 @@ export const portfolioData = {
     description: "Core coursework focused on software engineering, web application development, database management systems, and computer networks."
   },
   additionalInfo: {
-    internshipTarget: "MERN Stack Developer Intern",
+    internshipTarget: "Full-Stack Developer Intern",
     availability: "Four months",
     preferredArrangement: "Fully remote",
     nationality: "Myanmar",
@@ -73,7 +73,7 @@ export const portfolioData = {
     {
       id: "media-world",
       title: "The Daily / Media World",
-      tagline: "Full-Stack MERN News & Media Platform",
+      tagline: "Full-Stack News & Media Platform",
       description:
         "A full-stack media and news publishing web application featuring user authentication, protected story creation, paginated article reading, and dynamic category filtering across Culture, Community, and Current Affairs.",
       image: `${import.meta.env.BASE_URL}projects/newmedia-world.png`,
@@ -94,7 +94,7 @@ export const portfolioData = {
     {
       id: "student-management-system",
       title: "Student Management System",
-      tagline: "Full-Stack MERN Academic Management Application",
+      tagline: "Full-Stack Academic Management Application",
       description:
         "Full-stack web application project focused on managing student information. Practised building application features, handling CRUD operations, connecting a database, and organizing backend code using the MVC pattern.",
       githubUrl: "https://github.com/NAYZAR00",

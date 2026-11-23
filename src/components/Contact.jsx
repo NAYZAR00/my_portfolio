@@ -14,7 +14,7 @@ function Contact() {
           Let's Build Something <span className="gradient-text">Great</span>
         </h2>
         <p className="section-subtitle">
-          Seeking a four-month remote MERN Stack Developer Internship. Let's connect!
+          Seeking a four-month remote Full-Stack Developer Internship. Let's connect!
         </p>
       </div>
 
@@ -29,7 +29,7 @@ function Contact() {
 
           <h3>Start a Conversation</h3>
           <p>
-            I am actively seeking a four-month remote MERN Stack Developer Internship to contribute to
+            I am actively seeking a four-month remote Full-Stack Developer Internship to contribute to
             development teams and build real-world web applications. Feel free to reach out directly via
             email or view my code on GitHub!
           </p>
