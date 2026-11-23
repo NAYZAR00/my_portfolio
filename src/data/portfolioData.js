@@ -120,17 +120,6 @@ export const portfolioData = {
       featured: false,
       cvProject: false
     },
-    {
-      id: "todo-list",
-      title: "Task Planner & To-Do",
-      tagline: "Productivity Task Management App",
-      description:
-        "A clean and intuitive task management tool designed for day-to-day productivity with interactive state handling and local persistence.",
-      githubUrl: "https://github.com/NAYZAR00/To-do-list",
-      tags: ["JavaScript", "DOM Manipulation", "CSS3", "Local Storage"],
-      featured: false,
-      cvProject: false
-    }
   ]
 };
 
