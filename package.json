@@ -3,12 +3,15 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
- "scripts": {
+ 
+"scripts": {
   "dev": "vite",
   "build": "vite build",
-  "predeploy": "npm run build",
+  "build:github": "vite build --base=/my_portfolio/",
+  "predeploy": "npm run build:github",
   "deploy": "gh-pages -d dist"
-},
+}
+,
   "dependencies": {
     "lucide-react": "^0.468.0",
     "react": "^18.3.1",
