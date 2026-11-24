@@ -19,7 +19,7 @@ function Hero() {
         </div>
 
         <p className="hero-description">
-          Information Technology student at Rangsit University with hands-on experience building full-stack web applications using the MERN stack (MongoDB, Express.js, React.js, and Node.js). Experienced in developing responsive user interfaces, building RESTful APIs, and integrating databases. Eager to apply technical skills, contribute to real-world software development projects, and grow as a Junior Full-Stack Developer. Seeking an opportunity to start a professional career in full-stack development.
+          Information Technology student at Rangsit University with hands-on experience building full-stack web applications using the MERN stack (MongoDB, Express.js, React.js, and Node.js). Experienced in developing responsive user interfaces, building RESTful APIs, and integrating databases. Eager to apply technical skills, contribute to real-world software development projects, and grow as a  Full-Stack Developer. 
         </p>
 
         <div className="hero-buttons">

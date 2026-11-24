@@ -1,9 +1,9 @@
 export const portfolioData = {
   developer: {
     name: "Nay Zar Aung",
-    title: "FULL-STACK DEVELOPER INTERN",
+    title: "FULL-STACK DEVELOPER",
     role: "Full-Stack Developer",
-    targetRole: "Full-Stack Developer Intern",
+    targetRole: "Full-Stack Developer",
     greeting: "Hello, I'm",
     tagline: "Information Technology student at Rangsit University seeking a four-month remote Full-Stack Developer Internship.",
     bio: "Information Technology university student at Rangsit University with hands-on practice building web development projects and working with the full stack (MongoDB, Express, React, Node.js). Familiar with creating React interfaces, developing Node.js and Express.js backend functionality, connecting MongoDB databases, and organizing application code. Seeking a four-month remote Full-Stack Developer Internship to strengthen practical skills, contribute to a development team, and gain experience building real-world web applications.",
@@ -27,14 +27,11 @@ export const portfolioData = {
     institution: "Rangsit University (RSU)",
     country: "Thailand",
     degree: "Bachelor's degree studies in Information Technology",
-    graduation: "December 2027",
-    status: "Expected graduation: December 2027",
+   
     description: "Core coursework focused on software engineering, web application development, database management systems, and computer networks."
   },
   additionalInfo: {
-    internshipTarget: "Full-Stack Developer Intern",
-    availability: "Four months",
-    preferredArrangement: "Fully remote",
+    
     nationality: "Myanmar",
     languages: [
       { name: "English", level: "Intermediate (B1)" },

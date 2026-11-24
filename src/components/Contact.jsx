@@ -13,26 +13,17 @@ function Contact() {
         <h2>
           Let's Build Something <span className="gradient-text">Great</span>
         </h2>
-        <p className="section-subtitle">
-          Seeking a four-month remote Full-Stack Developer Internship. Let's connect!
-        </p>
+        
       </div>
 
       <div className="contact-container">
         <div className="contact-card">
-          <div className="contact-status">
-            <span className="status-dot" />
-            <span>
-              {developer.availability} • {additionalInfo.preferredArrangement}
-            </span>
-          </div>
+         
 
-          <h3>Start a Conversation</h3>
-          <p>
-            I am actively seeking a four-month remote Full-Stack Developer Internship to contribute to
-            development teams and build real-world web applications. Feel free to reach out directly via
-            email or view my code on GitHub!
-          </p>
+         <h3 className="contact-card-title">
+          Start a Conversation
+          </h3>
+         
 
           <div className="contact-links">
             <a
